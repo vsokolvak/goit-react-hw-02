@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
-import NoFeedback from "./components/NoFeedback/NoFeedback";
+import Notification from "./components/Notification/Notification";
 
 function App() {
   //set state feedback
@@ -56,7 +56,7 @@ function App() {
           changeFeedback={changeFeedback}
           totalFeedback={totalFeedback}
         />
-        {totalFeedback ? <Feedback feedback={feedback} /> : <NoFeedback />}
+        {totalFeedback ? <Feedback feedback={feedback} /> : <Notification />}
       </main>
     </>
   );
